@@ -4,7 +4,8 @@ pycodestyle==2.12.1
 pyflakes==3.2.0
 pylint==3.3.1
 flake8==7.1.1
-python-coveralls==2.9.3
 pre-commit==4.0.1
+python-coveralls==2.9.3
+pytest==8.3.3
 black==24.10.0
 isort==5.13.2

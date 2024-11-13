@@ -77,7 +77,7 @@ if __name__ == "__main__":
     PARSER.add_argument(
         "--version",
         action="version",
-        version="%(prog)s (version {version})".format(version=__version__),
+        version=f"%(prog)s (version {__version__})",
     )
 
     MYARGS = PARSER.parse_args()
