@@ -15,23 +15,26 @@ __email__ = "test@example.org"
 __status__ = "Development"
 
 import argparse
+
 from logzero import logger
 
 
 def log(function):
     """Handy logging decorator."""
+
     def inner(*args, **kwargs):
         """Innter method."""
         logger.debug(function)
         function(*args, **kwargs)
+
     return inner
 
 
-class Greeter():
+class Greeter:
     """Example function with types documented in the docstring."""
 
     def __init__(self):
-        self.message = 'Hello world!'
+        self.message = "Hello world!"
 
     def set_message(self, message: str):
         """Function description."""
@@ -44,7 +47,7 @@ class Greeter():
 
 
 def main(args: argparse.Namespace):
-    """ Main entry point of the app """
+    """Main entry point of the app"""
     Greeter().print_message()
     logger.info(args)
 
@@ -67,13 +70,15 @@ if __name__ == "__main__":
         "--verbose",
         action="count",
         default=0,
-        help="Verbosity (-v, -vv, etc)")
+        help="Verbosity (-v, -vv, etc)",
+    )
 
     # Specify output of "--version"
     PARSER.add_argument(
         "--version",
         action="version",
-        version="%(prog)s (version {version})".format(version=__version__))
+        version="%(prog)s (version {version})".format(version=__version__),
+    )
 
     MYARGS = PARSER.parse_args()
     main(MYARGS)

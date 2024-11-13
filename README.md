@@ -7,9 +7,9 @@ Python boiler plate project. Main features:
 * Requirements management.
 * Basic make, .gitignore and other configuration files.
 
-[![Build Status](https://github.com/guimatech/python-project-template/workflows/Build-Test/badge.svg)](https://github.com/guimatech/python-project-template/actions) 
-[![Build Status](https://travis-ci.org/guimatech/python-project-template.svg?branch=main)](https://travis-ci.org/guimatech/python-project-template) 
-[![Coverage Status](https://coveralls.io/repos/github/guimatech/python-project-template/badge.svg?branch=main)](https://coveralls.io/github/guimatech/python-project-template?branch=main) 
+[![Build Status](https://github.com/guimatech/python-project-template/workflows/Build-Test/badge.svg)](https://github.com/guimatech/python-project-template/actions)
+[![Build Status](https://travis-ci.org/guimatech/python-project-template.svg?branch=main)](https://travis-ci.org/guimatech/python-project-template)
+[![Coverage Status](https://coveralls.io/repos/github/guimatech/python-project-template/badge.svg?branch=main)](https://coveralls.io/github/guimatech/python-project-template?branch=main)
 [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/guimatech/python-project-template/badges/quality-score.png?b=main)](https://scrutinizer-ci.com/g/guimatech/python-project-template/?branch=main)
 
 ## Examples

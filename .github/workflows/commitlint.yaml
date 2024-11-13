@@ -1,0 +1,15 @@
+name: Commitlint
+
+on:
+  push:
+    branches: [main, feature/*]
+  pull_request:
+    branches: [main, develop]
+
+jobs:
+  commitlint:
+    runs-on: ubuntu-latest
+    name: Commitlint
+    steps:
+      - name: Run commitlint
+        run: opensource-nepal/commitlint@v1
