@@ -1,5 +1,14 @@
-# Python Project Template
-Python boiler plate project. Main features:
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+<img src="https://img.shields.io/static/v1?label=python&message=3.12&color=3776AB&style=flat&logo=Python"/>
+<img src="https://img.shields.io/static/v1?label=PRs&message=welcome&color=mediumgreen&style=flat"/>
+[![Build Status](https://github.com/guimatech/python-project-template/workflows/Build-Test/badge.svg)](https://github.com/guimatech/python-project-template/actions)
+[![Build Status](https://travis-ci.org/guimatech/python-project-template.svg?branch=main)](https://travis-ci.org/guimatech/python-project-template)
+[![Coverage Status](https://coveralls.io/repos/github/guimatech/python-project-template/badge.svg?branch=main)](https://coveralls.io/github/guimatech/python-project-template?branch=main)
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/guimatech/python-project-template/badges/quality-score.png?b=main)](https://scrutinizer-ci.com/g/guimatech/python-project-template/?branch=main)
+
+<h1 align="center">🔗 Python Project Template</h1>
+
+🚀 Python boiler plate project template. Main features:
 
 * Main application with parameter parsing and logger (via decorator).
 * Dynamic tests via unit tests and test coverage.
@@ -7,10 +16,14 @@ Python boiler plate project. Main features:
 * Requirements management.
 * Basic make, .gitignore and other configuration files.
 
-[![Build Status](https://github.com/guimatech/python-project-template/workflows/Build-Test/badge.svg)](https://github.com/guimatech/python-project-template/actions)
-[![Build Status](https://travis-ci.org/guimatech/python-project-template.svg?branch=main)](https://travis-ci.org/guimatech/python-project-template)
-[![Coverage Status](https://coveralls.io/repos/github/guimatech/python-project-template/badge.svg?branch=main)](https://coveralls.io/github/guimatech/python-project-template?branch=main)
-[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/guimatech/python-project-template/badges/quality-score.png?b=main)](https://scrutinizer-ci.com/g/guimatech/python-project-template/?branch=main)
+## Execution
+
+```bash
+$ py -m venv .venv
+$ .venv\Scripts\activate
+$ pre-commit install
+pre-commit installed at .git/hooks/pre-commit
+```
 
 ## Examples
 
