@@ -11,5 +11,10 @@ jobs:
     runs-on: ubuntu-latest
     name: Commitlint
     steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+
       - name: Run commitlint
         run: opensource-nepal/commitlint@v1

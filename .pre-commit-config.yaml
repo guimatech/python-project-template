@@ -10,6 +10,10 @@ repos:
         types: [python]
         pass_filenames: false
         always_run: true
+-   repo: https://github.com/opensource-nepal/commitlint
+    rev: v1.2.0
+    hooks:
+    -   id: commitlint
 -   repo: https://github.com/pre-commit/pre-commit-hooks
     rev: v5.0.0
     hooks:
