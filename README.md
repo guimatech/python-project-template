@@ -1,8 +1,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 <img src="https://img.shields.io/static/v1?label=python&message=3.12&color=3776AB&style=flat&logo=Python"/>
 <img src="https://img.shields.io/static/v1?label=PRs&message=welcome&color=mediumgreen&style=flat"/>
-[![Build Status](https://github.com/guimatech/python-project-template/workflows/Linting/badge.svg)](https://github.com/guimatech/python-project-template/actions)
-[![Build Status](https://travis-ci.org/guimatech/python-project-template.svg?branch=main)](https://travis-ci.org/guimatech/python-project-template)
+[![Linting](https://github.com/guimatech/python-project-template/workflows/Linting/badge.svg)](https://github.com/guimatech/python-project-template/actions)
 [![Coverage Status](https://coveralls.io/repos/github/guimatech/python-project-template/badge.svg?branch=main)](https://coveralls.io/github/guimatech/python-project-template?branch=main)
 [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/guimatech/python-project-template/badges/quality-score.png?b=main)](https://scrutinizer-ci.com/g/guimatech/python-project-template/?branch=main)
 

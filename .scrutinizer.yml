@@ -1,0 +1,26 @@
+checks:
+    python:
+        code_rating: true
+        duplicate_code: true
+    javascript:
+        no_comma_dangle: true
+        code_rating: true
+        duplicate_code: true
+
+build:
+    environment:
+        python: 3.12
+    dependencies:
+        before:
+            - command: pip install --trusted-host pypi.python.org pytest-xdist
+            - command: pip install --trusted-host pypi.python.org --upgrade pip
+            - command: pip install -r requirements.txt
+    nodes:
+        analysis:
+            tests:
+                override:
+                    - command: make code-style code-lint
+                    - command: make test
+                    - command: make coverage
+                    - command: timeout 1s make doc || true
+                    - py-scrutinizer-run
