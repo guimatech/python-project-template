@@ -2,7 +2,7 @@ SRC_CORE=src
 SRC_TEST=tests
 SRC_RESOURCES=resources
 PYTHON=python3
-PYDOC=pydoc3
+PYDOC=python -m pydoc
 PIP=pip3
 
 
@@ -23,8 +23,12 @@ test: ## Test the code
 	@coverage run --source . -m $(SRC_TEST).test_hello
 	@coverage report
 
+coverage: ## Show the coverage
+	@type coverage >/dev/null 2>&1 || (echo "Run '$(PIP) install coverage' first." >&2 ; exit 1)
+	@coverage report
+
 doc: ## Document the code
-	@$(PYDOC) src
+	@$(PYDOC) src src.hello
 
 clean: ## Cleanup
 	@rm -f $(SRC_CORE)/*.pyc

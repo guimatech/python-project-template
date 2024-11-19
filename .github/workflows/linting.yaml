@@ -4,7 +4,7 @@ on: pull_request
 
 jobs:
   lint:
-    name: Test
+    name: Lint
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v4
@@ -33,8 +33,8 @@ jobs:
         pip3 install mypy
         make code-style code-lint
 
-  commitlint:
-    name: Commitlint
+  commit-lint:
+    name: Commit lint
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
